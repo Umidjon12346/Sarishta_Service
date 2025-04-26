@@ -1,248 +1,185 @@
+
 {
-    "Santexnika": {
-        "title": {
-            "\ud83c\udf1f O'zbekcha": "\ud83d\udd27 Santexnika",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83d\udd27 \u0421\u0430\u043d\u0442\u0435\u0445\u043d\u0438\u043a",
-            "\ud83c\uddec\ud83c\udde7 English": "\ud83d\udd27 Plumber"
-        },
-        "description": {
-            "\ud83c\udf1f O'zbekcha": "Quvurlarni o'rnatish, ta'mirlash va boshqa santexnik xizmatlar. Narxi: 100,000 so'm.",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430, \u0440\u0435\u043c\u043e\u043d\u0442 \u0442\u0440\u0443\u0431 \u0438 \u0434\u0440\u0443\u0433\u0438\u0435 \u0441\u0430\u043d\u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0443\u0441\u043b\u0443\u0433\u0438. \u0426\u0435\u043d\u0430: 100,000 \u0441\u0443\u043c.",
-            "\ud83c\uddec\ud83c\udde7 English": "Installation and repair of pipes and other plumbing services. Price: 100,000 UZS."
-        },
-        "price": 100000
+  "services": {
+    "1": {
+      "service_name": {
+        "🌟 O'zbekcha": "Santexnika",
+        "🌐 Русский": "🔧 Сантехник",
+        "🇬🇧 English": "Plumber"
+      },
+      "title": {
+        "🌟 O'zbekcha": "🔧 Santexnika",
+        "🌐 Русский": "🔧 Сантехник",
+        "🇬🇧 English": "🔧 Plumber"
+      },
+      "description": {
+        "🌟 O'zbekcha": "Quvurlarni o'rnatish, ta'mirlash va boshqa santexnik xizmatlar.",
+        "🌐 Русский": "Установка, ремонт труб и другие сантехнические услуги.",
+        "🇬🇧 English": "Installation and repair of pipes and other plumbing services."
+      },
+      "price": 100000
     },
-    "Tozalash": {
-        "title": {
-            "\ud83c\udf1f O'zbekcha": "\ud83e\uddf9 Tozalash xizmati",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83e\uddf9 \u0423\u0431\u043e\u0440\u043a\u0430",
-            "\ud83c\uddec\ud83c\udde7 English": "\ud83e\uddf9 Cleaning"
-        },
-        "description": {
-            "\ud83c\udf1f O'zbekcha": "Uy, ofis va boshqa joylarni sifatli tozalash xizmati. Narxi: 80,000 so'm.",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u041a\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u0430\u044f \u0443\u0431\u043e\u0440\u043a\u0430 \u0434\u043e\u043c\u043e\u0432, \u043e\u0444\u0438\u0441\u043e\u0432 \u0438 \u0434\u0440\u0443\u0433\u0438\u0445 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0439. \u0426\u0435\u043d\u0430: 80,000 \u0441\u0443\u043c.",
-            "\ud83c\uddec\ud83c\udde7 English": "High-quality cleaning for homes, offices, and other spaces. Price: 80,000 UZS."
-        },
-        "price": 80000
+    "2": {
+      "service_name": {
+        "🌟 O'zbekcha": "Tozalash xizmati",
+        "🌐 Русский": "Уборка",
+        "🇬🇧 English": "Cleaning"
+      },
+      "title": {
+        "🌟 O'zbekcha": "🧹 Tozalash xizmati",
+        "🌐 Русский": "🧹 Уборка",
+        "🇬🇧 English": "🧹 Cleaning"
+      },
+      "description": {
+        "🌟 O'zbekcha": "Uy, ofis va boshqa joylarni sifatli tozalash xizmati.",
+        "🌐 Русский": "Качественная уборка домов, офисов и других помещений.",
+        "🇬🇧 English": "High-quality cleaning for homes, offices, and other spaces."
+      },
+      "price": 80000
     },
-    "Elektrik": {
-        "title": {
-            "\ud83c\udf1f O'zbekcha": "\ud83d\udca1 Elektrik",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83d\udca1 \u042d\u043b\u0435\u043a\u0442\u0440\u0438\u043a",
-            "\ud83c\uddec\ud83c\udde7 English": "\ud83d\udca1 Electrician"
-        },
-        "description": {
-            "\ud83c\udf1f O'zbekcha": "Elektr simlarini o\u2018rnatish va muammolarni bartaraf qilish. Narxi: 120,000 so'm.",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u0440\u043e\u0432\u043e\u0434\u043a\u0438 \u0438 \u0443\u0441\u0442\u0440\u0430\u043d\u0435\u043d\u0438\u0435 \u043d\u0435\u0438\u0441\u043f\u0440\u0430\u0432\u043d\u043e\u0441\u0442\u0435\u0439. \u0426\u0435\u043d\u0430: 120,000 \u0441\u0443\u043c.",
-            "\ud83c\uddec\ud83c\udde7 English": "Installation of wiring and fixing electrical problems. Price: 120,000 UZS."
-        },
-        "price": 120000
+    "3": {
+      "service_name": {
+        "🌟 O'zbekcha": "Elektrik",
+        "🌐 Русский": "Электрик",
+        "🇬🇧 English": "Electrician"
+      },
+      "title": {
+        "🌟 O'zbekcha": "💡 Elektrik",
+        "🌐 Русский": "💡 Электрик",
+        "🇬🇧 English": "💡 Electrician"
+      },
+      "description": {
+        "🌟 O'zbekcha": "Elektr simlarini o'rnatish va muammolarni bartaraf qilish.",
+        "🌐 Русский": "Установка электропроводки и устранение неисправностей.",
+        "🇬🇧 English": "Installation of wiring and fixing electrical problems."
+      },
+      "price": 120000
     },
-    "Yordamchi ishchi": {
-        "title": {
-            "\ud83c\udf1f O'zbekcha": "\ud83d\udc77\u200d\u2642\ufe0f Yordamchi ishchi",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83d\udc77\u200d\u2642\ufe0f \u041f\u043e\u0434\u0441\u043e\u0431\u043d\u044b\u0439 \u0440\u0430\u0431\u043e\u0447\u0438\u0439",
-            "\ud83c\uddec\ud83c\udde7 English": "\ud83d\udc77\u200d\u2642\ufe0f Assistant worker"
-        },
-        "description": {
-            "\ud83c\udf1f O'zbekcha": "Og\u2018ir yuk ko\u2018tarish, qurilishga yordam berish va boshqa jismoniy ishlar. Narxi: 70,000 so'm.",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u041f\u043e\u0434\u044a\u0451\u043c \u0442\u044f\u0436\u0435\u0441\u0442\u0435\u0439, \u043f\u043e\u043c\u043e\u0449\u044c \u043d\u0430 \u0441\u0442\u0440\u043e\u0439\u043a\u0435 \u0438 \u0434\u0440\u0443\u0433\u0430\u044f \u0444\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0440\u0430\u0431\u043e\u0442\u0430. \u0426\u0435\u043d\u0430: 70,000 \u0441\u0443\u043c.",
-            "\ud83c\uddec\ud83c\udde7 English": "Lifting, construction help, and other physical tasks. Price: 70,000 UZS."
-        },
-        "price": 70000
+    "4": {
+      "service_name": {
+        "🌟 O'zbekcha": "🧑‍🔧 Yordamchi ishchi",
+        "🌐 Русский": "🧑‍🔧 Подсобный рабочий",
+        "🇬🇧 English": "🧑‍🔧 Assistant worker"
+      },
+      "title": {
+        "🌟 O'zbekcha": "🧑‍🔧 Yordamchi ishchi",
+        "🌐 Русский": "🧑‍🔧 Подсобный рабочий",
+        "🇬🇧 English": "🧑‍🔧 Assistant worker"
+      },
+      "description": {
+        "🌟 O'zbekcha": "Og‘ir yuk ko‘tarish, qurilishga yordam berish va boshqa jismoniy ishlar.",
+        "🌐 Русский": "Подъём тяжестей, помощь на стройке и другая физическая работа.",
+        "🇬🇧 English": "Lifting, construction help, and other physical tasks."
+      },
+      "price": 70000
     },
-    "Enaga": {
-        "title": {
-            "\ud83c\udf1f O'zbekcha": "\ud83d\udc76 Enaga",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83d\udc76 \u041d\u044f\u043d\u044f",
-            "\ud83c\uddec\ud83c\udde7 English": "\ud83d\udc76 Nanny"
-        },
-        "description": {
-            "\ud83c\udf1f O'zbekcha": "Bolalarni parvarish qilish, o\u2018yin o\u2018ynash, ovqatlantirish. Narxi: 90,000 so'm.",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u0423\u0445\u043e\u0434 \u0437\u0430 \u0434\u0435\u0442\u044c\u043c\u0438, \u0438\u0433\u0440\u044b, \u043a\u043e\u0440\u043c\u043b\u0435\u043d\u0438\u0435 \u0438 \u043f\u0440\u0438\u0441\u043c\u043e\u0442\u0440. \u0426\u0435\u043d\u0430: 90,000 \u0441\u0443\u043c.",
-            "\ud83c\uddec\ud83c\udde7 English": "Taking care of children, playing games, feeding and supervision. Price: 90,000 UZS."
-        },
-        "price": 90000
+    "5": {
+      "service_name": {
+        "🌟 O'zbekcha": "👶 Enaga",
+        "🌐 Русский": "👶 Няня",
+        "🇬🇧 English": "👶 Nanny"
+      },
+      "title": {
+        "🌟 O'zbekcha": "👶 Enaga",
+        "🌐 Русский": "👶 Няня",
+        "🇬🇧 English": "👶 Nanny"
+      },
+      "description": {
+        "🌟 O'zbekcha": "Bolalarni parvarish qilish, o‘yin o‘ynash, ovqatlantirish.",
+        "🌐 Русский": "Уход за детьми, игры, кормление и присмотр.",
+        "🇬🇧 English": "Taking care of children, playing games, feeding and supervision."
+      },
+      "price": 90000
     },
-    "Hamshira": {
-        "title": {
-            "\ud83c\udf1f O'zbekcha": "\ud83e\ude7a Hamshira",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83e\ude7a \u041c\u0435\u0434\u0441\u0435\u0441\u0442\u0440\u0430",
-            "\ud83c\uddec\ud83c\udde7 English": "\ud83e\ude7a Nurse"
-        },
-        "description": {
-            "\ud83c\udf1f O'zbekcha": "Tibbiy parvarish, igna qilish, dori berish va bemorlarga yordam. Narxi: 150,000 so'm.",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u0438\u0439 \u0443\u0445\u043e\u0434, \u0443\u043a\u043e\u043b\u044b, \u043b\u0435\u043a\u0430\u0440\u0441\u0442\u0432\u0430 \u0438 \u043f\u043e\u043c\u043e\u0449\u044c \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u0430\u043c. \u0426\u0435\u043d\u0430: 150,000 \u0441\u0443\u043c.",
-            "\ud83c\uddec\ud83c\udde7 English": "Medical care, injections, medication, and patient assistance. Price: 150,000 UZS."
-        },
-        "price": 150000
+    "6": {
+      "service_name": {
+        "🌟 O'zbekcha": "🩺 Hamshira",
+        "🌐 Русский": "🩺 Медсестра",
+        "🇬🇧 English": "🩺 Nurse"
+      },
+      "title": {
+        "🌟 O'zbekcha": "🩺 Hamshira",
+        "🌐 Русский": "🩺 Медсестра",
+        "🇬🇧 English": "🩺 Nurse"
+      },
+      "description": {
+        "🌟 O'zbekcha": "Tibbiy parvarish, igna qilish, dori berish va bemorlarga yordam.",
+        "🌐 Русский": "Медицинский уход, уколы, лекарства и помощь пациентам.",
+        "🇬🇧 English": "Medical care, injections, medication, and patient assistance."
+      },
+      "price": 150000
     },
-    "Usta": {
-        "title": {
-            "\ud83c\udf1f O'zbekcha": "\ud83d\udee0\ufe0f Usta",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83d\udee0\ufe0f \u041c\u0430\u0441\u0442\u0435\u0440",
-            "\ud83c\uddec\ud83c\udde7 English": "\ud83d\udee0\ufe0f Craftsman"
-        },
-        "description": {
-            "\ud83c\udf1f O'zbekcha": "Yig\u2018ish, ta'mirlash va qurilish ishlari bo\u2018yicha usta. Narxi: 110,000 so'm.",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u041c\u0430\u0441\u0442\u0435\u0440 \u043f\u043e \u0441\u0431\u043e\u0440\u043a\u0435, \u0440\u0435\u043c\u043e\u043d\u0442\u0443 \u0438 \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u0443. \u0426\u0435\u043d\u0430: 110,000 \u0441\u0443\u043c.",
-            "\ud83c\uddec\ud83c\udde7 English": "Specialist in assembly, repair, and construction. Price: 110,000 UZS."
-        },
-        "price": 110000
+    "7": {
+      "service_name": {
+        "🌟 O'zbekcha": "Usta",
+        "🌐 Русский": "Мастер",
+        "🇬🇧 English": "Craftsman"
+      },
+      "title": {
+        "🌟 O'zbekcha": "🛠️ Usta",
+        "🌐 Русский": "🛠️ Мастер",
+        "🇬🇧 English": "🛠️ Craftsman"
+      },
+      "description": {
+        "🌟 O'zbekcha": "Yig‘ish, ta'mirlash va qurilish ishlari bo‘yicha usta.",
+        "🌐 Русский": "Мастер по сборке, ремонту и строительству.",
+        "🇬🇧 English": "Specialist in assembly, repair, and construction."
+      },
+      "price": 110000
     },
-    "Event manager": {
-        "title": {
-            "\ud83c\udf1f O'zbekcha": "\ud83c\udf89 Tadbir tashkilotchisi",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83c\udf89 \u041e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0442\u043e\u0440 \u043c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u0439",
-            "\ud83c\uddec\ud83c\udde7 English": "\ud83c\udf89 Event Manager"
-        },
-        "description": {
-            "\ud83c\udf1f O'zbekcha": "Tug\u2018ilgan kun, to\u2018y, korporativ va boshqa tadbirlarni tashkillashtirish. Narxi: 200,000 so'm.",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u041e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u044f \u0434\u043d\u0435\u0439 \u0440\u043e\u0436\u0434\u0435\u043d\u0438\u0439, \u0441\u0432\u0430\u0434\u0435\u0431 \u0438 \u0434\u0440\u0443\u0433\u0438\u0445 \u043c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u0439. \u0426\u0435\u043d\u0430: 200,000 \u0441\u0443\u043c.",
-            "\ud83c\uddec\ud83c\udde7 English": "Organizing birthdays, weddings, and corporate events. Price: 200,000 UZS."
-        },
-        "price": 200000
+    "8": {
+      "service_name": {
+        "🌟 O'zbekcha": "Tadbir tashkilotchisi",
+        "🌐 Русский": "Организатор мероприятий",
+        "🇬🇧 English": "Event Manager"
+      },
+      "title": {
+        "🌟 O'zbekcha": "🎉 Tadbir tashkilotchisi",
+        "🌐 Русский": "🎉 Организатор мероприятий",
+        "🇬🇧 English": "🎉 Event Manager"
+      },
+      "description": {
+        "🌟 O'zbekcha": "Tug‘ilgan kun, to‘y, korporativ va boshqa tadbirlarni tashkillashtirish.",
+        "🌐 Русский": "Организация дней рождения, свадеб и других мероприятий.",
+        "🇬🇧 English": "Organizing birthdays, weddings, and corporate events."
+      },
+      "price": 200000
     },
-    "Bog'bon": {
-        "title": {
-            "\ud83c\udf1f O'zbekcha": "\ud83c\udf3f Bog'bon",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83c\udf3f \u0421\u0430\u0434\u043e\u0432\u043d\u0438\u043a",
-            "\ud83c\uddec\ud83c\udde7 English": "\ud83c\udf3f Gardener"
-        },
-        "description": {
-            "\ud83c\udf1f O'zbekcha": "Bog\u2018 va hovlilarga qarash, daraxt va gullarni parvarishlash, sug\u2018orish va obodonlashtirish ishlari. Narxi: 85,000 so'm.",
-            "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u0423\u0445\u043e\u0434 \u0437\u0430 \u0441\u0430\u0434\u0430\u043c\u0438 \u0438 \u0434\u0432\u043e\u0440\u0430\u043c\u0438, \u043f\u043e\u043b\u0438\u0432, \u043e\u0431\u0440\u0435\u0437\u043a\u0430 \u0434\u0435\u0440\u0435\u0432\u044c\u0435\u0432 \u0438 \u0431\u043b\u0430\u0433\u043e\u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u043e. \u0426\u0435\u043d\u0430: 85,000 \u0441\u0443\u043c.",
-            "\ud83c\uddec\ud83c\udde7 English": "Garden and yard care, tree trimming, watering, and landscaping. Price: 85,000 UZS."
-        },
-        "price": 85000
+    "9": {
+      "service_name": {
+        "🌟 O'zbekcha": "Bog'bon",
+        "🌐 Русский": "Садовник",
+        "🇬🇧 English": "Gardener"
+      },
+      "title": {
+        "🌟 O'zbekcha": "🌿 Bog'bon",
+        "🌐 Русский": "🌿 Садовник",
+        "🇬🇧 English": "🌿 Gardener"
+      },
+      "description": {
+        "🌟 O'zbekcha": "Bog‘ va hovlilarga qarash, daraxt va gullarni parvarishlash, sug‘orish va obodonlashtirish ishlari.",
+        "🌐 Русский": "Уход за садами и дворами, полив, обрезка деревьев и благоустройство.",
+        "🇬🇧 English": "Garden and yard care, tree trimming, watering, and landscaping."
+      },
+      "price": 85000
     },
-    "services": {
-        "1": {
-            "service_name": "Santexnika",
-            "title": {
-                "\ud83c\udf1f O'zbekcha": "\ud83d\udd27 Santexnika",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83d\udd27 \u0421\u0430\u043d\u0442\u0435\u0445\u043d\u0438\u043a",
-                "\ud83c\uddec\ud83c\udde7 English": "\ud83d\udd27 Plumber"
-            },
-            "description": {
-                "\ud83c\udf1f O'zbekcha": "Quvurlarni o'rnatish, ta'mirlash va boshqa santexnik xizmatlar. Narxi: 100,000 so'm.",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430, \u0440\u0435\u043c\u043e\u043d\u0442 \u0442\u0440\u0443\u0431 \u0438 \u0434\u0440\u0443\u0433\u0438\u0435 \u0441\u0430\u043d\u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0443\u0441\u043b\u0443\u0433\u0438. \u0426\u0435\u043d\u0430: 100,000 \u0441\u0443\u043c.",
-                "\ud83c\uddec\ud83c\udde7 English": "Installation and repair of pipes and other plumbing services. Price: 100,000 UZS."
-            },
-            "price": 100000
-        },
-        "2": {
-            "service_name": "Tozalash",
-            "title": {
-                "\ud83c\udf1f O'zbekcha": "\ud83e\uddf9 Tozalash xizmati",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83e\uddf9 \u0423\u0431\u043e\u0440\u043a\u0430",
-                "\ud83c\uddec\ud83c\udde7 English": "\ud83e\uddf9 Cleaning"
-            },
-            "description": {
-                "\ud83c\udf1f O'zbekcha": "Uy, ofis va boshqa joylarni sifatli tozalash xizmati. Narxi: 80,000 so'm.",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u041a\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u0430\u044f \u0443\u0431\u043e\u0440\u043a\u0430 \u0434\u043e\u043c\u043e\u0432, \u043e\u0444\u0438\u0441\u043e\u0432 \u0438 \u0434\u0440\u0443\u0433\u0438\u0445 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0439. \u0426\u0435\u043d\u0430: 80,000 \u0441\u0443\u043c.",
-                "\ud83c\uddec\ud83c\udde7 English": "High-quality cleaning for homes, offices, and other spaces. Price: 80,000 UZS."
-            },
-            "price": 80000
-        },
-        "3": {
-            "service_name": "Elektrik",
-            "title": {
-                "\ud83c\udf1f O'zbekcha": "\ud83d\udca1 Elektrik",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83d\udca1 \u042d\u043b\u0435\u043a\u0442\u0440\u0438\u043a",
-                "\ud83c\uddec\ud83c\udde7 English": "\ud83d\udca1 Electrician"
-            },
-            "description": {
-                "\ud83c\udf1f O'zbekcha": "Elektr simlarini o\u2018rnatish va muammolarni bartaraf qilish. Narxi: 120,000 so'm.",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u0440\u043e\u0432\u043e\u0434\u043a\u0438 \u0438 \u0443\u0441\u0442\u0440\u0430\u043d\u0435\u043d\u0438\u0435 \u043d\u0435\u0438\u0441\u043f\u0440\u0430\u0432\u043d\u043e\u0441\u0442\u0435\u0439. \u0426\u0435\u043d\u0430: 120,000 \u0441\u0443\u043c.",
-                "\ud83c\uddec\ud83c\udde7 English": "Installation of wiring and fixing electrical problems. Price: 120,000 UZS."
-            },
-            "price": 120000
-        },
-        "4": {
-            "service_name": "Yordamchi ishchi",
-            "title": {
-                "\ud83c\udf1f O'zbekcha": "\ud83d\udc77\u200d\u2642\ufe0f Yordamchi ishchi",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83d\udc77\u200d\u2642\ufe0f \u041f\u043e\u0434\u0441\u043e\u0431\u043d\u044b\u0439 \u0440\u0430\u0431\u043e\u0447\u0438\u0439",
-                "\ud83c\uddec\ud83c\udde7 English": "\ud83d\udc77\u200d\u2642\ufe0f Assistant worker"
-            },
-            "description": {
-                "\ud83c\udf1f O'zbekcha": "Og\u2018ir yuk ko\u2018tarish, qurilishga yordam berish va boshqa jismoniy ishlar. Narxi: 70,000 so'm.",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u041f\u043e\u0434\u044a\u0451\u043c \u0442\u044f\u0436\u0435\u0441\u0442\u0435\u0439, \u043f\u043e\u043c\u043e\u0449\u044c \u043d\u0430 \u0441\u0442\u0440\u043e\u0439\u043a\u0435 \u0438 \u0434\u0440\u0443\u0433\u0430\u044f \u0444\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0440\u0430\u0431\u043e\u0442\u0430. \u0426\u0435\u043d\u0430: 70,000 \u0441\u0443\u043c.",
-                "\ud83c\uddec\ud83c\udde7 English": "Lifting, construction help, and other physical tasks. Price: 70,000 UZS."
-            },
-            "price": 70000
-        },
-        "5": {
-            "service_name": "Enaga",
-            "title": {
-                "\ud83c\udf1f O'zbekcha": "\ud83d\udc76 Enaga",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83d\udc76 \u041d\u044f\u043d\u044f",
-                "\ud83c\uddec\ud83c\udde7 English": "\ud83d\udc76 Nanny"
-            },
-            "description": {
-                "\ud83c\udf1f O'zbekcha": "Bolalarni parvarish qilish, o\u2018yin o\u2018ynash, ovqatlantirish. Narxi: 90,000 so'm.",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u0423\u0445\u043e\u0434 \u0437\u0430 \u0434\u0435\u0442\u044c\u043c\u0438, \u0438\u0433\u0440\u044b, \u043a\u043e\u0440\u043c\u043b\u0435\u043d\u0438\u0435 \u0438 \u043f\u0440\u0438\u0441\u043c\u043e\u0442\u0440. \u0426\u0435\u043d\u0430: 90,000 \u0441\u0443\u043c.",
-                "\ud83c\uddec\ud83c\udde7 English": "Taking care of children, playing games, feeding and supervision. Price: 90,000 UZS."
-            },
-            "price": 90000
-        },
-        "6": {
-            "service_name": "Hamshira",
-            "title": {
-                "\ud83c\udf1f O'zbekcha": "\ud83e\ude7a Hamshira",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83e\ude7a \u041c\u0435\u0434\u0441\u0435\u0441\u0442\u0440\u0430",
-                "\ud83c\uddec\ud83c\udde7 English": "\ud83e\ude7a Nurse"
-            },
-            "description": {
-                "\ud83c\udf1f O'zbekcha": "Tibbiy parvarish, igna qilish, dori berish va bemorlarga yordam. Narxi: 150,000 so'm.",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u0438\u0439 \u0443\u0445\u043e\u0434, \u0443\u043a\u043e\u043b\u044b, \u043b\u0435\u043a\u0430\u0440\u0441\u0442\u0432\u0430 \u0438 \u043f\u043e\u043c\u043e\u0449\u044c \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u0430\u043c. \u0426\u0435\u043d\u0430: 150,000 \u0441\u0443\u043c.",
-                "\ud83c\uddec\ud83c\udde7 English": "Medical care, injections, medication, and patient assistance. Price: 150,000 UZS."
-            },
-            "price": 150000
-        },
-        "7": {
-            "service_name": "Usta",
-            "title": {
-                "\ud83c\udf1f O'zbekcha": "\ud83d\udee0\ufe0f Usta",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83d\udee0\ufe0f \u041c\u0430\u0441\u0442\u0435\u0440",
-                "\ud83c\uddec\ud83c\udde7 English": "\ud83d\udee0\ufe0f Craftsman"
-            },
-            "description": {
-                "\ud83c\udf1f O'zbekcha": "Yig\u2018ish, ta'mirlash va qurilish ishlari bo\u2018yicha usta. Narxi: 110,000 so'm.",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u041c\u0430\u0441\u0442\u0435\u0440 \u043f\u043e \u0441\u0431\u043e\u0440\u043a\u0435, \u0440\u0435\u043c\u043e\u043d\u0442\u0443 \u0438 \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u0443. \u0426\u0435\u043d\u0430: 110,000 \u0441\u0443\u043c.",
-                "\ud83c\uddec\ud83c\udde7 English": "Specialist in assembly, repair, and construction. Price: 110,000 UZS."
-            },
-            "price": 110000
-        },
-        "8": {
-            "service_name": "Event manager",
-            "title": {
-                "\ud83c\udf1f O'zbekcha": "\ud83c\udf89 Tadbir tashkilotchisi",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83c\udf89 \u041e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0442\u043e\u0440 \u043c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u0439",
-                "\ud83c\uddec\ud83c\udde7 English": "\ud83c\udf89 Event Manager"
-            },
-            "description": {
-                "\ud83c\udf1f O'zbekcha": "Tug\u2018ilgan kun, to\u2018y, korporativ va boshqa tadbirlarni tashkillashtirish. Narxi: 200,000 so'm.",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u041e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u044f \u0434\u043d\u0435\u0439 \u0440\u043e\u0436\u0434\u0435\u043d\u0438\u0439, \u0441\u0432\u0430\u0434\u0435\u0431 \u0438 \u0434\u0440\u0443\u0433\u0438\u0445 \u043c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u0439. \u0426\u0435\u043d\u0430: 200,000 \u0441\u0443\u043c.",
-                "\ud83c\uddec\ud83c\udde7 English": "Organizing birthdays, weddings, and corporate events. Price: 200,000 UZS."
-            },
-            "price": 200000
-        },
-        
-        "9": {
-            "service_name": "Bog'bon",
-            "title": {
-                "\ud83c\udf1f O'zbekcha": "\ud83c\udf3f Bog'bon",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\ud83c\udf3f \u0421\u0430\u0434\u043e\u0432\u043d\u0438\u043a",
-                "\ud83c\uddec\ud83c\udde7 English": "\ud83c\udf3f Gardener"
-            },
-            "description": {
-                "\ud83c\udf1f O'zbekcha": "Bog\u2018 va hovlilarga qarash, daraxt va gullarni parvarishlash, sug\u2018orish va obodonlashtirish ishlari. Narxi: 85,000 so'm.",
-                "\ud83c\udf10 \u0420\u0443\u0441\u0441\u043a\u0438\u0439": "\u0423\u0445\u043e\u0434 \u0437\u0430 \u0441\u0430\u0434\u0430\u043c\u0438 \u0438 \u0434\u0432\u043e\u0440\u0430\u043c\u0438, \u043f\u043e\u043b\u0438\u0432, \u043e\u0431\u0440\u0435\u0437\u043a\u0430 \u0434\u0435\u0440\u0435\u0432\u044c\u0435\u0432 \u0438 \u0431\u043b\u0430\u0433\u043e\u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u043e. \u0426\u0435\u043d\u0430: 85,000 \u0441\u0443\u043c.",
-                "\ud83c\uddec\ud83c\udde7 English": "Garden and yard care, tree trimming, watering, and landscaping. Price: 85,000 UZS."
-            },
-            "price": 85000
-        }
+    "10": {
+      "service_name": {
+        "🌟 O'zbekcha": "Сиделка",
+        "🌐 Русский": "Сиделка",
+        "🇬🇧 English": "Caregiver"
+      },
+      "title": {
+        "🌟 O'zbekcha": "🧑‍⚕️ Сиделка",
+        "🌐 Русский": "🧑‍⚕️ Сиделка",
+        "🇬🇧 English": "🧑‍⚕️ Caregiver"
+      },
+      "description": {
+        "🌟 O'zbekcha": "Kattalar yoki bemorlarga tibbiy yordam, dori berish, parvarish qilish.",
+        "🌐 Русский": "Уход за взрослыми или пациентами, помощь в принятии лекарств, медицинский уход.",
+        "🇬🇧 English": "Medical care for adults or patients, assistance with medication, and general caregiving."
+      },
+      "price": 150000
     }
+  }
 }

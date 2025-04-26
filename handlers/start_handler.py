@@ -76,7 +76,7 @@ def start(message, bot, collection, user_language):
 
         bot.send_message(
             chat_id,
-            '👋 Salom! Sizni SARISHTA SERVICE botida ko‘rganimdan xursandman! 😊\n\n'
-            'Tilni tanlash orqali davom eting va biz sizga qanday yordam bera olishimizni ko‘ring.',
+            '👋 Salom! Sizni SARISHTA SERVICE botida ko‘rganimdan xursandmiz!\n' \
+            '👋 Привет! Рад видеть вас в SARISHTA SERVICE боте! 😊\n\nTilni tanlang \ Выберите язык:',
             reply_markup=keyboard
         )

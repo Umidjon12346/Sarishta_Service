@@ -6,8 +6,11 @@ from handlers.contact_handler import handle_contact
 from handlers.name_handler import handle_name
 from pymongo import MongoClient
 from dotenv import load_dotenv
+from handlers.hand_location import handle_location
+from db import get_service_titles
 import os
 from shows.request_phone_number import request_phone_number
+from shows.show_service_details import show_service_details
 load_dotenv()
 
 bot_token = os.getenv("BOT_TOKEN")
@@ -51,12 +54,26 @@ def choose_language(message):
 @bot.message_handler(content_types=['contact'])
 def request_phone_numbers(message):
     handle_contact(message,bot,user_language,user_profiles)
+
+
+
+@bot.message_handler(func=lambda message: message.text in get_service_titles(user_language.get(message.chat.id, "🌟 O'zbekcha")))
+def handle_service_selection(message):
+    chat_id = message.chat.id
+    service_name = message.text
+    language = user_language.get(chat_id, "🌟 O'zbekcha")  # Foydalanuvchi tilini olish
     
+    show_service_details(bot, chat_id, service_name, language)  
+
+@bot.message_handler(content_types=['location'])
+def register_location_handler(message):
+    handle_location(message,bot,user_language)
 
 @bot.message_handler(func=lambda message: message.chat.id in user_language)
 def handle_name_wrapper(message):
     handle_name(message, bot, user_language, user_profiles) 
     print("dsagasfdash")
+
 
 bot.polling()
 

@@ -25,7 +25,7 @@ def show_services_categories(message: types.Message, user_language: dict, bot: T
             'order': "🚖 Оформить заказ"
         }
     }
-
+    print(language)
     # Xizmat kategoriyalarini olish
     categories = list(get_service_titles(language))  # `get_services_categories()` funksiyasini chaqiramiz
 

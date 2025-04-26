@@ -58,7 +58,7 @@
 
 #     return titles
 
-from tinydb import TinyDB, Query
+from tinydb import TinyDB
 import json
 
 # TinyDB ma'lumotlar bazasini yaratish
@@ -68,32 +68,46 @@ services_table = db.table('services')
 # JSON ma'lumotlarini bazaga yuklash (agar oldin yuklanmagan bo'lsa)
 if not services_table.all():
     with open('db.json', 'r', encoding='utf-8') as f:
-        services_data = json.load(f)
+        data = json.load(f)
+        services = data.get('services', {})
     
-    for service_name, service_info in services_data.items():
+    for service_id, service_data in services.items():
         services_table.insert({
-            'service_name': service_name,
-            'title': service_info['title'],
-            'description': service_info['description'],
-            'price': service_info['price']
+            'service_id': service_id,
+            'service_name': service_data['service_name'],
+            'title': service_data['title'],
+            'description': service_data['description'],
+            'price': service_data['price']
         })
 
 def get_service_titles(language: str):
     """Tanlangan tilga mos xizmat sarlavhalarini qaytaradi"""
-    # Til kodlarini emoji belgilariga moslashtirish
-    language_map = {
-        'uz': "🌟 O'zbekcha",
-        'ru': "🌐 Русский",
-        'en': "🇬🇧 English"
-    }
-    selected_language = language_map.get(language, "🌟 O'zbekcha")
     
-    # Barcha xizmatlarni olish
-    services = services_table.all()
     
     titles = []
-    for service in services:
-        title = service['title'].get(selected_language, "Title not found")
+    for service in services_table.all():
+        title = service['title'].get(language, "Title not found")
         titles.append(title)
     
     return titles
+    
+
+def get_service_descriptions(language: str):
+    """Tanlangan tilga mos xizmat tavsiflarini qaytaradi"""
+    # language_map = {
+    #     'uz': "🌟 O'zbekcha",
+    #     'ru': "🌐 Русский",
+    #     'en': "🇬🇧 English"
+    # }
+    # selected_language = language_map.get(language, "🌟 O'zbekcha")
+    
+    with open('db.json', 'r', encoding='utf-8') as f:
+        data = json.load(f)
+        services = data.get('services', {})
+    
+    descriptions = []
+    for service_id, service_data in services.items():
+        description = service_data['description'].get(language, "Description not found")
+        descriptions.append(description)
+    
+    return descriptions
