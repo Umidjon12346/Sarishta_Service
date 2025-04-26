@@ -7,7 +7,7 @@ from .add_user import add_user  # Foydalanuvchini qo'shish funksiyasi
 
 
 
-def handle_contact(message, bot, user_language, user_profiles):
+def handle_contact(message, bot, user_language, user_steps):
     user_id = message.chat.id
     language = user_language.get(user_id, '🌐 Русский')  # Foydalanuvchining tilini olish
 
@@ -21,6 +21,7 @@ def handle_contact(message, bot, user_language, user_profiles):
         # Foydalanuvchini telefon raqami bilan qo'shamiz, ammo ismni hozircha 'None' deb saqlaymiz
         add_user(user_id, phone_number=phone_number, user_name=None)
 
+        user_steps[user_id] = 'waiting_for_name'
         # Foydalanuvchining tiliga mos xabarlarni yuborish
         responses = {
             '🌐 Русский': (f"Ваш номер: {phone_number} принят. Спасибо! 🙏", "Введите ФИО:"),

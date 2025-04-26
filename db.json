@@ -3,12 +3,30 @@
   "services": {
     "1": {
       "service_name": {
-        "🌟 O'zbekcha": "Santexnika",
+        "🌟 O'zbekcha": "Cleaner/Tozalash",
+        "🌐 Русский": "Cleaner/Уборка",
+        "🇬🇧 English": "Cleaner/Cleaning"
+      },
+      "title": {
+        "🌟 O'zbekcha": "🧹 Cleaner/Tozalash",
+        "🌐 Русский": "🧹 Cleaner/Уборка",
+        "🇬🇧 English": "🧹 Cleaner/Cleaning"
+      },
+      "description": {
+        "🌟 O'zbekcha": "Uy, ofis va boshqa joylarni sifatli tozalash xizmati.",
+        "🌐 Русский": "Качественная уборка домов, офисов и других помещений.",
+        "🇬🇧 English": "High-quality cleaning for homes, offices, and other spaces."
+      },
+      "price": 80000
+    },
+    "2": {
+      "service_name": {
+        "🌟 O'zbekcha": "Santexnik",
         "🌐 Русский": "🔧 Сантехник",
         "🇬🇧 English": "Plumber"
       },
       "title": {
-        "🌟 O'zbekcha": "🔧 Santexnika",
+        "🌟 O'zbekcha": "🔧 Santexnik",
         "🌐 Русский": "🔧 Сантехник",
         "🇬🇧 English": "🔧 Plumber"
       },
@@ -19,61 +37,7 @@
       },
       "price": 100000
     },
-    "2": {
-      "service_name": {
-        "🌟 O'zbekcha": "Tozalash xizmati",
-        "🌐 Русский": "Уборка",
-        "🇬🇧 English": "Cleaning"
-      },
-      "title": {
-        "🌟 O'zbekcha": "🧹 Tozalash xizmati",
-        "🌐 Русский": "🧹 Уборка",
-        "🇬🇧 English": "🧹 Cleaning"
-      },
-      "description": {
-        "🌟 O'zbekcha": "Uy, ofis va boshqa joylarni sifatli tozalash xizmati.",
-        "🌐 Русский": "Качественная уборка домов, офисов и других помещений.",
-        "🇬🇧 English": "High-quality cleaning for homes, offices, and other spaces."
-      },
-      "price": 80000
-    },
     "3": {
-      "service_name": {
-        "🌟 O'zbekcha": "Elektrik",
-        "🌐 Русский": "Электрик",
-        "🇬🇧 English": "Electrician"
-      },
-      "title": {
-        "🌟 O'zbekcha": "💡 Elektrik",
-        "🌐 Русский": "💡 Электрик",
-        "🇬🇧 English": "💡 Electrician"
-      },
-      "description": {
-        "🌟 O'zbekcha": "Elektr simlarini o'rnatish va muammolarni bartaraf qilish.",
-        "🌐 Русский": "Установка электропроводки и устранение неисправностей.",
-        "🇬🇧 English": "Installation of wiring and fixing electrical problems."
-      },
-      "price": 120000
-    },
-    "4": {
-      "service_name": {
-        "🌟 O'zbekcha": "🧑‍🔧 Yordamchi ishchi",
-        "🌐 Русский": "🧑‍🔧 Подсобный рабочий",
-        "🇬🇧 English": "🧑‍🔧 Assistant worker"
-      },
-      "title": {
-        "🌟 O'zbekcha": "🧑‍🔧 Yordamchi ishchi",
-        "🌐 Русский": "🧑‍🔧 Подсобный рабочий",
-        "🇬🇧 English": "🧑‍🔧 Assistant worker"
-      },
-      "description": {
-        "🌟 O'zbekcha": "Og‘ir yuk ko‘tarish, qurilishga yordam berish va boshqa jismoniy ishlar.",
-        "🌐 Русский": "Подъём тяжестей, помощь на стройке и другая физическая работа.",
-        "🇬🇧 English": "Lifting, construction help, and other physical tasks."
-      },
-      "price": 70000
-    },
-    "5": {
       "service_name": {
         "🌟 O'zbekcha": "👶 Enaga",
         "🌐 Русский": "👶 Няня",
@@ -91,7 +55,25 @@
       },
       "price": 90000
     },
-    "6": {
+    "4": {
+      "service_name": {
+        "🌟 O'zbekcha": "Elektrik",
+        "🌐 Русский": "Электрик",
+        "🇬🇧 English": "Electrician"
+      },
+      "title": {
+        "🌟 O'zbekcha": "💡 Elektrik",
+        "🌐 Русский": "💡 Электрик",
+        "🇬🇧 English": "💡 Electrician"
+      },
+      "description": {
+        "🌟 O'zbekcha": "Elektr simlarini o'rnatish va muammolarni bartaraf qilish.",
+        "🌐 Русский": "Установка электропроводки и устранение неисправностей.",
+        "🇬🇧 English": "Installation of wiring and fixing electrical problems."
+      },
+      "price": 120000
+    },
+    "5": {
       "service_name": {
         "🌟 O'zbekcha": "🩺 Hamshira",
         "🌐 Русский": "🩺 Медсестра",
@@ -109,7 +91,44 @@
       },
       "price": 150000
     },
+    "6": {
+      "service_name": {
+        "🌟 O'zbekcha": "🧑‍🔧 Yordamchi ishchi",
+        "🌐 Русский": "🧑‍🔧 Подсобный рабочий",
+        "🇬🇧 English": "🧑‍🔧 Assistant worker"
+      },
+      "title": {
+        "🌟 O'zbekcha": "🧑‍🔧 Yordamchi ishchi",
+        "🌐 Русский": "🧑‍🔧 Подсобный рабочий",
+        "🇬🇧 English": "🧑‍🔧 Assistant worker"
+      },
+      "description": {
+        "🌟 O'zbekcha": "Og‘ir yuk ko‘tarish, qurilishga yordam berish va boshqa jismoniy ishlar.",
+        "🌐 Русский": "Подъём тяжестей, помощь на стройке и другая физическая работа.",
+        "🇬🇧 English": "Lifting, construction help, and other physical tasks."
+      },
+      "price": 70000
+    },
     "7": {
+      "service_name": {
+        "🌟 O'zbekcha": "Сиделка",
+        "🌐 Русский": "Сиделка",
+        "🇬🇧 English": "Caregiver"
+      },
+      "title": {
+        "🌟 O'zbekcha": "🧑‍⚕️ Сиделка",
+        "🌐 Русский": "🧑‍⚕️ Сиделка",
+        "🇬🇧 English": "🧑‍⚕️ Caregiver"
+      },
+      "description": {
+        "🌟 O'zbekcha": "Kattalar yoki bemorlarga tibbiy yordam, dori berish, parvarish qilish.",
+        "🌐 Русский": "Уход за взрослыми или пациентами, помощь в принятии лекарств, медицинский уход.",
+        "🇬🇧 English": "Medical care for adults or patients, assistance with medication, and general caregiving."
+      },
+      "price": 150000
+    },
+
+    "8": {
       "service_name": {
         "🌟 O'zbekcha": "Usta",
         "🌐 Русский": "Мастер",
@@ -127,7 +146,7 @@
       },
       "price": 110000
     },
-    "8": {
+    "9": {
       "service_name": {
         "🌟 O'zbekcha": "Tadbir tashkilotchisi",
         "🌐 Русский": "Организатор мероприятий",
@@ -145,16 +164,16 @@
       },
       "price": 200000
     },
-    "9": {
+    "10": {
       "service_name": {
-        "🌟 O'zbekcha": "Bog'bon",
-        "🌐 Русский": "Садовник",
-        "🇬🇧 English": "Gardener"
+        "🌟 O'zbekcha": "Bog'bon/Florist",
+        "🌐 Русский": "Садовник/Florist",
+        "🇬🇧 English": "Gardener/Florist"
       },
       "title": {
-        "🌟 O'zbekcha": "🌿 Bog'bon",
-        "🌐 Русский": "🌿 Садовник",
-        "🇬🇧 English": "🌿 Gardener"
+        "🌟 O'zbekcha": "🌿 Bog'bon/Florist",
+        "🌐 Русский": "🌿 Садовник/Florist",
+        "🇬🇧 English": "🌿 Gardener/Florist"
       },
       "description": {
         "🌟 O'zbekcha": "Bog‘ va hovlilarga qarash, daraxt va gullarni parvarishlash, sug‘orish va obodonlashtirish ishlari.",
@@ -162,24 +181,7 @@
         "🇬🇧 English": "Garden and yard care, tree trimming, watering, and landscaping."
       },
       "price": 85000
-    },
-    "10": {
-      "service_name": {
-        "🌟 O'zbekcha": "Сиделка",
-        "🌐 Русский": "Сиделка",
-        "🇬🇧 English": "Caregiver"
-      },
-      "title": {
-        "🌟 O'zbekcha": "🧑‍⚕️ Сиделка",
-        "🌐 Русский": "🧑‍⚕️ Сиделка",
-        "🇬🇧 English": "🧑‍⚕️ Caregiver"
-      },
-      "description": {
-        "🌟 O'zbekcha": "Kattalar yoki bemorlarga tibbiy yordam, dori berish, parvarish qilish.",
-        "🌐 Русский": "Уход за взрослыми или пациентами, помощь в принятии лекарств, медицинский уход.",
-        "🇬🇧 English": "Medical care for adults or patients, assistance with medication, and general caregiving."
-      },
-      "price": 150000
     }
+    
   }
 }

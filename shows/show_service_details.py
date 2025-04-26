@@ -573,28 +573,28 @@ def show_service_details(bot: TeleBot, chat_id: int, service_name: str, language
 
         # Tarjimalar
         translations = {
-            "🌟 O'zbekcha": {
-                'request_location': "📍 Lokatsiyangizni yuboring yoki manzilni yozib yuboring",
-                'service_info': "📌 Xizmat haqida ma'lumot:",
-                'price': "💰 Narx:",
-                'back': "🔙 Orqaga",
-                'location_btn': "📍 Lokatsiyani yuborish"
-            },
-            "🌐 Русский": {
-                'request_location': "📍 Отправьте ваше местоположение или введите адрес",
-                'service_info': "📌 Информация об услуге:",
-                'price': "💰 Цена:",
-                'back': "🔙 Назад",
-                'location_btn': "📍 Отправить местоположение"
-            },
-            "🇬🇧 English": {
-                'request_location': "📍 Please send your location or type your address",
-                'service_info': "📌 Service information:",
-                'price': "💰 Price:",
-                'back': "🔙 Back",
-                'location_btn': "📍 Send location"
-            }
-        }
+    "🌟 O'zbekcha": {
+        'request_location': "📍 Lokatsiyangizni yuboring",
+        'service_info': "📌 Xizmat haqida ma'lumot:",
+        'price': "💰 Narx:",
+        'back': "🔙 Bosh menu",  # O'zgartirildi: "Orqaga" -> "Bosh menu"
+        'location_btn': "📍 Lokatsiyani yuborish"
+    },
+    "🌐 Русский": {
+        'request_location': "📍 Отправьте ваше местоположение",
+        'service_info': "📌 Информация об услуге:",
+        'price': "💰 Цена:",
+        'back': "🔙 Главное меню",  # O'zgartirildi: "Назад" -> "Главное меню"
+        'location_btn': "📍 Отправить местоположение"
+    },
+    "🇬🇧 English": {
+        'request_location': "📍 Please send your location",
+        'service_info': "📌 Service information:",
+        'price': "💰 Price:",
+        'back': "🔙 Main menu",  # O'zgartirildi: "Back" -> "Main menu"
+        'location_btn': "📍 Send location"
+    }
+}
 
         trans = translations.get(language, translations["🌟 O'zbekcha"])
 

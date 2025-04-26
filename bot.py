@@ -8,6 +8,7 @@ from pymongo import MongoClient
 from dotenv import load_dotenv
 from handlers.hand_location import handle_location
 from db import get_service_titles
+from handlers.start_order import start_order_processing
 import os
 from shows.request_phone_number import request_phone_number
 from shows.show_service_details import show_service_details
@@ -16,7 +17,8 @@ load_dotenv()
 bot_token = os.getenv("BOT_TOKEN")
 mongo_uri = os.getenv("MONGO_URI")
 
-
+admin_id_1 = 8197516105
+admin_id_2 = 5691080241
 # MongoDB bilan ulanish
 client = MongoClient(mongo_uri)  # MongoDB'ga ulanish
 
@@ -53,7 +55,7 @@ def choose_language(message):
 
 @bot.message_handler(content_types=['contact'])
 def request_phone_numbers(message):
-    handle_contact(message,bot,user_language,user_profiles)
+    handle_contact(message,bot,user_language,user_steps)
 
 
 
@@ -65,15 +67,23 @@ def handle_service_selection(message):
     
     show_service_details(bot, chat_id, service_name, language)  
 
+
+
+@bot.message_handler(func=lambda message: user_steps.get(message.chat.id) == 'waiting_for_name')
+def handle_name_wrapper(message):
+    handle_name(message, bot, user_language, user_profiles, user_steps)
+    print("Ism qabul qilindi!")
+
 @bot.message_handler(content_types=['location'])
 def register_location_handler(message):
+    user_id = message.chat.id
     handle_location(message,bot,user_language)
+    start_order_processing(user_id,admin_id_1,bot)
+    start_order_processing(user_id,admin_id_2,bot)
 
-@bot.message_handler(func=lambda message: message.chat.id in user_language)
-def handle_name_wrapper(message):
-    handle_name(message, bot, user_language, user_profiles) 
-    print("dsagasfdash")
-
+@bot.message_handler(func=lambda message: message.text in ["🔙 Bosh menu", "🔙 Главное меню", "🔙 Main menu"])
+def handle_back_button(message):
+    show_services_categories(message,user_language,bot)
 
 bot.polling()
 
