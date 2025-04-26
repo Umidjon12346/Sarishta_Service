@@ -1,2 +1,30 @@
+# Python fayllari
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual muhit
+env/
+venv/
+.venv/
+
+# Tizimga xos fayllar
+.DS_Store
+Thumbs.db
+
+# Telegram bot tokenlari
 .env
-env
+.env.local
+
+# Ma'lumotlar bazasi fayllari
+*.json
+!db.example.json  # Faqat namuna sifatida
+
+# IDE sozlamalari
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Log fayllari
+*.log
