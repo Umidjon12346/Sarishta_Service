@@ -87,7 +87,7 @@ def register_location_handler(message):
     start_order_processing(user_id,admin_id_1,bot,user_language)
     start_order_processing(user_id,admin_id_2,bot,user_language)
     register_order_callbacks(bot, language)
-    show_feedback_menu(bot,chat_id,language)
+    
 
 @bot.message_handler(func=lambda message: message.text.endswith('⭐️'))
 def feedback_received(message):
@@ -95,6 +95,7 @@ def feedback_received(message):
     language = user_language.get(chat_id, '🌐 Русский')
     handle_feedback(bot, message, language)
     show_services_categories(message,user_language,bot)
+
 
 @bot.message_handler(func=lambda message: message.text in ["🔙 Bosh menu", "🔙 Главное меню", "🔙 Main menu"])
 def handle_back_button(message):
