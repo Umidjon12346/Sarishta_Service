@@ -211,6 +211,7 @@ def send_admin_notification(bot, action, order_number):
         bot.send_message(admin_id, message)
 
 # Asosiy callback funksiyalarni registratsiya qilish
+# Asosiy callback funksiyalarni registratsiya qilish
 def register_order_callbacks(bot, language):
 
     @bot.callback_query_handler(func=lambda call: call.data.startswith(('order_done_', 'order_cancel_', 'order_pending_')))
@@ -255,8 +256,10 @@ def register_order_callbacks(bot, language):
         collection.update_one({'_id': user_id}, {'$set': {'order_status': new_status}})
         bot.answer_callback_query(call.id, f"Buyurtma holati: {new_status.replace('_', ' ')}", show_alert=True)
 
-        # Adminlar xabarini yangilash
-        remove_admin_buttons(bot, user_id)
+        # Faqat "kutilmoqda" holati uchun tugmalarni o'zgartirmaymiz
+        if action != 'pending':
+            # Adminlar xabarini yangilash
+            remove_admin_buttons(bot, user_id)
 
         # Foydalanuvchiga habar yuborish
         user_message = messages.get(language, messages.get("🌟 O'zbekcha"))
@@ -268,6 +271,7 @@ def register_order_callbacks(bot, language):
         # Agar "done" bo'lsa, foydalanuvchiga feedback menyu ko'rsatamiz
         if action == 'done':
             show_feedback_menu(bot, user_id, language)
+
 
 
 
