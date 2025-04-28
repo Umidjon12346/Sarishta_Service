@@ -184,7 +184,7 @@ client = MongoClient(mongo_uri)
 db = client.get_database()
 collection = db.Sarista_service.Services
 
-admin_messages ={}
+admin_messages = {}
 
 # Admin xabarlarini tozalovchi funksiya
 def remove_admin_buttons(bot, user_id):
@@ -195,6 +195,20 @@ def remove_admin_buttons(bot, user_id):
             except Exception as e:
                 print(f"Error editing message for admin {admin_id}: {e}")
         del admin_messages[user_id]
+
+# Adminlarga habar yuborish
+def send_admin_notification(bot, action, order_number):
+    admin_ids = [8197516105, 5691080241]  # Replace with your actual admin IDs
+    if action == 'done':
+        message = f"✅ Buyurtma #{order_number} bajarildi! Foydalanuvchi xabardor qilindi."
+    elif action == 'cancel':
+        message = f"❌ Buyurtma #{order_number} bekor qilindi! Foydalanuvchi xabardor qilindi. 🛑"
+    elif action == 'pending':
+        message = f"⏳ Buyurtma #{order_number} kutilmoqda! Foydalanuvchi xabardor qilindi."
+    
+    # Send notification to each admin
+    for admin_id in admin_ids:
+        bot.send_message(admin_id, message)
 
 # Asosiy callback funksiyalarni registratsiya qilish
 def register_order_callbacks(bot, language):
@@ -247,6 +261,9 @@ def register_order_callbacks(bot, language):
         # Foydalanuvchiga habar yuborish
         user_message = messages.get(language, messages.get("🌟 O'zbekcha"))
         bot.send_message(user_id, user_message)
+
+        # Adminlarga ham habar yuborish
+        send_admin_notification(bot, action, order_number)
 
         # Agar "done" bo'lsa, foydalanuvchiga feedback menyu ko'rsatamiz
         if action == 'done':

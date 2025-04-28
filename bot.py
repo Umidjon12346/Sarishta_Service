@@ -100,6 +100,11 @@ def feedback_received(message):
 def handle_back_button(message):
     show_services_categories(message,user_language,bot)
 
+
+@bot.message_handler(func=lambda message: message.text in ["⬅️ Orqaga", "⬅️ Назад", "⬅️ Back"])
+def handle_back_button1(message):
+    show_services_categories(message,user_language,bot)
+
 # @bot.callback_query_handler(func=lambda call: call.data.startswith('order_done_'))
 # def handle_order_done(call):
 #     user_id = call.data.split('_')[-1]  # user_id ni olamiz
