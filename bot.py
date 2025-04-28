@@ -21,8 +21,8 @@ load_dotenv()
 bot_token = os.getenv("BOT_TOKEN")
 mongo_uri = os.getenv("MONGO_URI")
 
-admin_id_1 = 8197516105
-admin_id_2 = 5691080241
+admin_ids = [1806482236, 5691080241]
+
 # MongoDB bilan ulanish
 client = MongoClient(mongo_uri)  # MongoDB'ga ulanish
 
@@ -84,8 +84,7 @@ def register_location_handler(message):
     user_id = message.chat.id
     language = user_language.get(chat_id, "🌟 O'zbekcha") 
     handle_location(message,bot,user_language)
-    start_order_processing(user_id,admin_id_1,bot,user_language)
-    start_order_processing(user_id,admin_id_2,bot,user_language)
+    start_order_processing(user_id,admin_ids,bot,user_language)
     register_order_callbacks(bot, language)
     
 
@@ -100,6 +99,20 @@ def feedback_received(message):
 @bot.message_handler(func=lambda message: message.text in ["🔙 Bosh menu", "🔙 Главное меню", "🔙 Main menu"])
 def handle_back_button(message):
     show_services_categories(message,user_language,bot)
+
+# @bot.callback_query_handler(func=lambda call: call.data.startswith('order_done_'))
+# def handle_order_done(call):
+#     user_id = call.data.split('_')[-1]  # user_id ni olamiz
+#     chat_id = call.message.chat.id
+#     user_id = int(user_id)  # Ehtiyotkorlik uchun int ga o'girib olamiz
+#     language = user_language.get(chat_id, '🌐 Русский')
+
+#     # Admin xabarini yangilash yoki o'chirish (agar kerak bo'lsa)
+#     bot.edit_message_reply_markup(chat_id=call.message.chat.id, message_id=call.message.message_id, reply_markup=None)
+
+#     # Foydalanuvchiga "show_feedback" yuborish
+#     show_feedback_menu(bot, user_id,language)
+
 
 # @bot.message_handler(func=lambda message: message.text.endswith('⭐️'))
 # def feedback_callback(message):
