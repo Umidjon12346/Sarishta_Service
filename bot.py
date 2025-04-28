@@ -21,7 +21,7 @@ load_dotenv()
 bot_token = os.getenv("BOT_TOKEN")
 mongo_uri = os.getenv("MONGO_URI")
 
-admin_ids = [1806482236, 5691080241]
+admin_ids = [8197516105, 5691080241]
 
 # MongoDB bilan ulanish
 client = MongoClient(mongo_uri)  # MongoDB'ga ulanish
