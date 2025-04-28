@@ -12,6 +12,10 @@ from handlers.start_order import start_order_processing
 import os
 from shows.request_phone_number import request_phone_number
 from shows.show_service_details import show_service_details
+from shows.show_feedback import show_feedback_menu
+from handlers.handle_feedback import handle_feedback
+from handlers.order_callback import register_order_callbacks
+
 load_dotenv()
 
 bot_token = os.getenv("BOT_TOKEN")
@@ -76,15 +80,44 @@ def handle_name_wrapper(message):
 
 @bot.message_handler(content_types=['location'])
 def register_location_handler(message):
+    chat_id = message.chat.id
     user_id = message.chat.id
-    language = user_language.get(user_id, "🌟 O'zbekcha")
+    language = user_language.get(chat_id, "🌟 O'zbekcha") 
     handle_location(message,bot,user_language)
     start_order_processing(user_id,admin_id_1,bot,user_language)
     start_order_processing(user_id,admin_id_2,bot,user_language)
+    register_order_callbacks(bot, language)
+    show_feedback_menu(bot,chat_id,language)
+
+@bot.message_handler(func=lambda message: message.text.endswith('⭐️'))
+def feedback_received(message):
+    chat_id = message.chat.id
+    language = user_language.get(chat_id, '🌐 Русский')
+    handle_feedback(bot, message, language)
+    show_services_categories(message,user_language,bot)
 
 @bot.message_handler(func=lambda message: message.text in ["🔙 Bosh menu", "🔙 Главное меню", "🔙 Main menu"])
 def handle_back_button(message):
     show_services_categories(message,user_language,bot)
+
+# @bot.message_handler(func=lambda message: message.text.endswith('⭐️'))
+# def feedback_callback(message):
+#     chat_id = message.chat.id
+#     language = user_language.get(chat_id, '🌐 Русский')
+    
+#     # Fikr-mulohaza uchun xabarlarni yaratish
+#     feedback_request_message = {
+#         '🌐 Русский': "Оставьте свой отзыв и комментарии.",
+#         "🌟 O'zbekcha": "Fikr va mulohazalaringizni jo'nating.",
+#         '🇬🇧 English': "Please send your feedback and comments."
+#     }
+    
+#     # Foydalanuvchiga tilga mos fikr yuborish
+#     bot.send_message(chat_id, feedback_request_message.get(language, "Please send your feedback and comments."))
+    
+    # handle_feedback(bot,message,language)
+
+
 
 bot.polling()
 

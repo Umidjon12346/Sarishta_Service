@@ -14,9 +14,9 @@ client = MongoClient(mongo_uri)
 db = client.get_database()
 collection = db.Sarista_service.Services
 
-def register_order_callbacks(bot, user_language):
+def register_order_callbacks(bot, language):
     @bot.callback_query_handler(
-        func=lambda call: call.data.startswith('order_done_') or call.data.startswith('order_cancel_'))
+    func=lambda call: call.data.startswith('order_done_') or call.data.startswith('order_cancel_') or call.data.startswith('order_pending_'))
     def handle_order_callback(call):
         user_id = call.data.split('_')[-1]
         message_id = call.message.message_id
@@ -30,7 +30,7 @@ def register_order_callbacks(bot, user_language):
             return
 
         order_number = user_data.get('order_number', "Noma'lum")
-        language = user_language.get(chat_id, "🌟 O'zbekcha") 
+       
         print(language) # Parametr orqali kelyapti!
 
         if 'order_done' in call.data:
@@ -57,8 +57,22 @@ def register_order_callbacks(bot, user_language):
     "🌟 O'zbekcha": f"❌ Sizning #{order_number} raqamli buyurtmangiz bekor qilindi. Sizni yana kutib qolamiz! 🤝",
     '🇬🇧 English': f"❌ Your order #{order_number} has been canceled. Hope to see you again! 🤝"
 }
-
+        
 
             bot.send_message(user_id, cancel_messages.get(language, f"❌ Buyurtmangiz #{order_number} bekor qilindi. 😔"))
             bot.edit_message_reply_markup(chat_id=chat_id, message_id=message_id, reply_markup=None)
             bot.send_message(chat_id, f"❌ Buyurtma #{order_number} bekor qilindi! Foydalanuvchi xabardor qilindi. 🛑")
+
+        elif 'order_pending' in call.data:
+            collection.update_one({'_id': int(user_id)}, {'$set': {'order_status': 'kutilmoqda'}})
+            bot.answer_callback_query(call.id, "Buyurtma holati: Kutilmoqda.", show_alert=True)
+
+            pending_messages = {
+                '🌐 Русский': f"⏳ Ваш заказ #{order_number} ожидается. Мы работаем над ним! 🙌",
+                "🌟 O'zbekcha": f"⏳ Sizning #{order_number} raqamli buyurtmangiz kutilmoqda. Tez orada tayyor bo'ladi! 🙌",
+                '🇬🇧 English': f"⏳ Your order #{order_number} is pending. We are working on it! 🙌"
+            }
+
+            bot.send_message(user_id, pending_messages.get(language, f"⏳ Buyurtmangiz #{order_number} kutilmoqda. 😊"))
+            bot.edit_message_reply_markup(chat_id=chat_id, message_id=message_id, reply_markup=None)
+            bot.send_message(chat_id, f"⏳ Buyurtma #{order_number} holati: Kutilmoqda! 📦")

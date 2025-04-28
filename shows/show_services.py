@@ -1,7 +1,7 @@
 from telebot import TeleBot, types
 from db import get_service_titles  # TinyDB operatsiyalari uchun import
 
-def show_services_categories(message: types.Message, user_language: dict, bot: TeleBot):
+def show_services_categories(message, user_language: dict, bot: TeleBot):
     chat_id = message.chat.id  # Foydalanuvchi chat ID'sini olish
 
     # Foydalanuvchining tilini olish

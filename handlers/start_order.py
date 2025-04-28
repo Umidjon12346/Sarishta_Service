@@ -129,14 +129,17 @@ def start_order_processing(user_id, admin_id, bot,user_language):
             f"<b>Xizmatlar:</b>\n{services_text}\n\n"
         )
 
+
         # Tugmalarni yaratish
         markup = InlineKeyboardMarkup()
         markup.add(InlineKeyboardButton("✅ Bajarildi", callback_data=f"order_done_{user_id}"))
         markup.add(InlineKeyboardButton("❌ Bekor qilish", callback_data=f"order_cancel_{user_id}"))
+        markup.add(InlineKeyboardButton("⏳ Kutilmoqda", callback_data=f"order_pending_{user_id}"))
 
         # Admin yoki yetkazib beruvchiga buyurtma xabarini jo'natish
         bot.send_message(admin_id, order_message, parse_mode='HTML', reply_markup=markup)
-        register_order_callbacks(bot,user_language)
+        
+
 
     else:
         print("Buyurtma ma'lumotlari topilmadi.")
